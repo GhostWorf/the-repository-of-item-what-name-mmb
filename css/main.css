@@ -1,0 +1,131 @@
+body {
+  background-color: #f1f1f1;
+}
+.nav {
+  margin-top: 0.26666rem;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 0.119997rem;
+}
+.nav ul {
+  padding: 0.186662rem 0.213328rem;
+}
+.nav ul li {
+  text-align: center;
+  width: 25%;
+  float: left;
+}
+.nav ul li > a {
+  display: block;
+  padding: 0.479988rem;
+  box-sizing: border-box;
+}
+.nav ul li > a img {
+  width: 100%;
+}
+.nav ul li > a p {
+  margin-top: 0.213328rem;
+  font-weight: bold;
+}
+.product-tj {
+  height: 0.93331rem;
+  background-color: #ff841d;
+}
+.product-tj .tj {
+  line-height: 0.93331rem;
+}
+.product-tj .tj > h3 {
+  font-size: 0.373324rem;
+}
+.product-tj .tj > h3 a {
+  margin-left: 0.26666rem;
+  color: #ffffff;
+}
+.product-tj > a {
+  margin-top: 0.213328rem;
+  margin-right: 0.293326rem;
+  width: 0.519987rem;
+  height: 0.519987rem;
+}
+.product-tj > a img {
+  width: 100%;
+  height: 100%;
+}
+.market {
+  width: 100%;
+}
+.market .box {
+  padding: 0.186662rem 0.106664rem;
+  width: 100%;
+  height: 3.426581rem;
+  border-bottom: 0.026666rem solid #5a5a5a;
+}
+.market .box .left {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.market .box .left img {
+  width: 100%;
+  height: 100%;
+}
+.market .box .right {
+  margin-left: 30%;
+}
+.market .box .right .info {
+  font-size: 0.39999rem;
+  font-weight: bold;
+  margin-bottom: 0.986642rem;
+}
+.market .box .right .info .price {
+  color: #ff6c00;
+}
+.market .box .right .fromanddate .comment {
+  float: right;
+  margin-right: 0.319992rem;
+}
+.market .box .right .fromanddate .comment i {
+  font-size: 0.26666rem;
+}
+.moreinfo {
+  width: 100%;
+  height: 1.119972rem;
+  padding: 0.26666rem 0.26666rem 0 0.26666rem;
+  background-color: #ffffff;
+}
+.moreinfo > a {
+  line-height: 0.853312rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0.026666rem solid #5a5a5a;
+  background-color: #f1f1f1;
+  border-radius: 0.079998rem;
+  font-weight: bold;
+}
+.brand {
+  height: 0.93331rem;
+  background-color: #ff841d;
+  margin-top: 0.26666rem;
+}
+.brand .morebrand {
+  line-height: 0.93331rem;
+}
+.brand .morebrand > h3 {
+  font-size: 0.373324rem;
+}
+.brand .morebrand > h3 a {
+  margin-left: 0.26666rem;
+  color: #ffffff;
+}
+.brand > a {
+  margin-top: 0.213328rem;
+  margin-right: 0.293326rem;
+  width: 0.519987rem;
+  height: 0.519987rem;
+}
+.brand > a img {
+  width: 100%;
+  height: 100%;
+}

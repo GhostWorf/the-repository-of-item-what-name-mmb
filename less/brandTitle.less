@@ -1,0 +1,92 @@
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem";     // 导入换算 less
+@import "@{themes}/variable";   // 导入变量 less
+
+body {
+    background-color: @bg-color;
+}
+
+// 路径导航模块
+.title {
+    width: 100%;
+    height: 73*@rem;
+    background-image:linear-gradient(to bottom,#fdfdfd,#eeeeee);
+    >.nav {
+        height: 100%;
+        line-height: 73*@rem;
+        font-weight: bold;
+        margin-left:14*@rem;
+        >a {
+            color:@font3-color;
+            margin-left:3*@rem;
+        }
+    }
+    >a {
+        font-weight: bold;
+        color:@font3-color;
+        float:right;
+        height: 58*@rem;
+        line-height: 58*@rem;
+        width: 120*@rem;
+        // line-height: 73*@rem;
+        text-align: center;
+        border:2*@rem solid @line-color;
+        margin-top:9*@rem;
+        border-radius:10*@rem;
+        background-image:linear-gradient(to bottom,#dbdbdb,#f4f4f4);
+        // background-color: #dbdbdb #f4f4f4;
+        margin-right:14*@rem;
+    }
+}
+
+.nav-list {
+    .tip {
+        width: 100%;
+        padding:20*@rem 10*@rem;
+        background-color:@bg-color; 
+        .txt {
+            width: 100%;
+            height: 76*@rem;
+            border:2*@rem solid @lines-color;
+            line-height: 76*@rem;
+            padding-left:21*@rem;
+            font-size:30*@rem;
+            color:#771e00;
+            background-color:@bgc-color; 
+        }
+    }
+}
+
+.brandList {
+    background-color: @bgc-color;
+    .listwrap {
+        border:2*@rem solid #cccccc;
+        border-radius: 6*@rem;
+        border-bottom:none;
+        li {
+            height: 78*@rem;
+            border-bottom:2*@rem solid @lines-color;
+            font-size:30*@rem;
+            
+            font-weight: bold;
+            line-height: 78*@rem;
+            padding-left:34*@rem;
+            padding-right:30*@rem;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                color:@font3-color;
+            }
+            i {
+                float:right;
+                font-size:30*@rem;
+                display: block;
+                width: 27*@rem;
+                height: 14*@rem;
+            }
+        }
+    }
+    
+
+}

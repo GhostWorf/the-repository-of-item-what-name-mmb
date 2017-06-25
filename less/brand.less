@@ -1,0 +1,249 @@
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem";     // 导入换算 less
+@import "@{themes}/variable";   // 导入变量 less
+
+body {
+    background-color: @bg-color;
+}
+
+// 路径导航模块
+.title {
+    width: 100%;
+    height: 73*@rem;
+    background-image:linear-gradient(to bottom,#fdfdfd,#eeeeee);
+    >.nav {
+        height: 100%;
+        line-height: 73*@rem;
+        font-weight: bold;
+        margin-left:14*@rem;
+        >a {
+            color:@font3-color;
+            margin-left:3*@rem;
+        }
+    }
+    >a {
+        font-weight: bold;
+        color:@font3-color;
+        float:right;
+        height: 58*@rem;
+        line-height: 58*@rem;
+        width: 120*@rem;
+        // line-height: 73*@rem;
+        text-align: center;
+        border:2*@rem solid @line-color;
+        margin-top:9*@rem;
+        border-radius:10*@rem;
+        background-image:linear-gradient(to bottom,#dbdbdb,#f4f4f4);
+        // background-color: #dbdbdb #f4f4f4;
+        margin-right:14*@rem;
+    }
+}
+
+.brand-list {
+    .txt {
+        width: 100%;
+        height: 76*@rem;
+        border:2*@rem solid @lines-color;
+        line-height: 76*@rem;
+        padding-left:21*@rem;
+        font-size:30*@rem;
+        color:#771e00;
+        background-color:@bgc-color; 
+    }
+}
+
+.productList {
+    .listwrap {
+        background-color:@bg-color;
+        li {
+            padding-left:10*@rem;
+            padding-top:10*@rem;
+            height: 130*@rem;
+            border-bottom:2*@rem solid #9e9d9e;
+            .content {
+                i {
+                    font-size:30*@rem;
+                    float:right;
+                    font-weight: bold;
+                    margin-right:11*@rem;
+                    margin-top:48*@rem;
+                }
+                .thead {
+                    height: 40*@rem;
+                    span {
+                        display: block;
+                    }
+                    .level {
+                        width: 40*@rem;
+                        height: 40*@rem;
+                        float:left;
+                        text-align: center;
+                        line-height: 40*@rem;
+                        color:@bg-color;
+                    }
+                    .brandName {
+                        margin-left:60*@rem;
+                        font-size:30*@rem;
+                        color:@font3-color;
+                        font-weight: bold;
+                    }
+                }
+                .sell {
+                    margin-left:60*@rem;
+                    margin-top:18*@rem;
+                    color:#9e9d9e;
+                    font-size:24*@rem;
+                }
+            }
+        }
+        li:last-child{
+            border-bottom:none;
+        } 
+    }
+}
+
+
+
+.list{
+    width: 100%;
+    .listbody{
+        .box {
+            padding:14*@rem 8*@rem;
+            width: 100%;
+            // height:257*@rem;
+            border-bottom:2*@rem solid @font-color;
+                .left {
+                    width: 30%;
+                    height:100%;
+                    box-sizing: border-box;
+                    // padding:1px;
+                    a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    img {
+                    width: 100%;
+                    height: 100%;
+                    }
+                }
+            }
+            .right {
+                margin-left:30%;
+                .info {
+                    font-size:30*@rem;
+                    font-weight: bold;
+                    margin-bottom:25*@rem;
+                }
+                .price{
+                    font-size:30*@rem;
+                    font-weight: bold;
+                    color:@price-color;
+                    margin-bottom:24*@rem;
+                }
+            }
+        }
+    }
+}
+
+.commentbox {
+    .commentswrap {
+        width: 100%;
+        background-color:@bg-color;
+        li {
+            padding:20*@rem;
+            border-bottom:2*@rem solid @lines-color;
+            .brandinfo {
+                img {
+                    width: 220*@rem;
+                    height: 220*@rem;   
+                }
+                .brandname {
+                    margin-left:220*@rem;
+                    padding-left:47*@rem;
+                    font-size:24*@rem;
+                    color:#a4a7a6;
+                }
+            }
+            .fromanddate {
+                padding:30*@rem 20*@rem;
+                background-color: #f8f8f8;
+                border:2*@rem solid @lines-color;
+                position: relative;
+                .arrow {
+                    position: absolute;
+                    left:90*@rem;
+                    top:-25*@rem;
+                    width: 0;
+                    height: 0;
+                    border:13*@rem solid #f8f8f8;
+                    border-top:13*@rem solid transparent;
+                    border-left:13*@rem solid transparent;
+                    border-right:13*@rem solid transparent;
+                }
+                .shadow {
+                    position: absolute;
+                    left:89*@rem;
+                    top:-31*@rem;
+                    width: 0;
+                    height: 0;
+                    border:15*@rem solid @lines-color;
+                    border-top:15*@rem solid transparent;
+                    border-left:15*@rem solid transparent;
+                    border-right:15*@rem solid transparent;
+                }
+                .banda {
+                    margin-bottom:32*@rem;
+                    .buyer {
+                        float:left;
+                        color:#1e4e0c;
+                    }
+                    .data {
+                        float:right;
+                        color:@font-color;
+                    }
+                }
+                >.comment {
+                    color:@font3-color;
+                    font-size:26*@rem;
+                }
+            }
+        }
+        li:last-child{
+            border-bottom:none;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgcgr {
+    background-color: #c9c9c9;
+}
+
+// 预备颜色类
+span.bgcr {
+    background-color: #f10e0e;
+}
+
+.bgcy {
+    background-color: #ff9314;
+}
+
+.bgcg {
+    background-color: #8adf5c;
+}

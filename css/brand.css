@@ -1,0 +1,199 @@
+body {
+  background-color: #ffffff;
+}
+.title {
+  width: 100%;
+  height: 0.973309rem;
+  background-image: linear-gradient(to bottom, #fdfdfd, #eeeeee);
+}
+.title > .nav {
+  height: 100%;
+  line-height: 0.973309rem;
+  font-weight: bold;
+  margin-left: 0.186662rem;
+}
+.title > .nav > a {
+  color: #070001;
+  margin-left: 0.039999rem;
+}
+.title > a {
+  font-weight: bold;
+  color: #070001;
+  float: right;
+  height: 0.773314rem;
+  line-height: 0.773314rem;
+  width: 1.59996rem;
+  text-align: center;
+  border: 0.026666rem solid #e6e6e6;
+  margin-top: 0.119997rem;
+  border-radius: 0.13333rem;
+  background-image: linear-gradient(to bottom, #dbdbdb, #f4f4f4);
+  margin-right: 0.186662rem;
+}
+.brand-list .txt {
+  width: 100%;
+  height: 1.013308rem;
+  border: 0.026666rem solid #cdcdcd;
+  line-height: 1.013308rem;
+  padding-left: 0.279993rem;
+  font-size: 0.39999rem;
+  color: #771e00;
+  background-color: #eeeff1;
+}
+.productList .listwrap {
+  background-color: #ffffff;
+}
+.productList .listwrap li {
+  padding-left: 0.13333rem;
+  padding-top: 0.13333rem;
+  height: 1.73329rem;
+  border-bottom: 0.026666rem solid #9e9d9e;
+}
+.productList .listwrap li .content i {
+  font-size: 0.39999rem;
+  float: right;
+  font-weight: bold;
+  margin-right: 0.146663rem;
+  margin-top: 0.639984rem;
+}
+.productList .listwrap li .content .thead {
+  height: 0.53332rem;
+}
+.productList .listwrap li .content .thead span {
+  display: block;
+}
+.productList .listwrap li .content .thead .level {
+  width: 0.53332rem;
+  height: 0.53332rem;
+  float: left;
+  text-align: center;
+  line-height: 0.53332rem;
+  color: #ffffff;
+}
+.productList .listwrap li .content .thead .brandName {
+  margin-left: 0.79998rem;
+  font-size: 0.39999rem;
+  color: #070001;
+  font-weight: bold;
+}
+.productList .listwrap li .content .sell {
+  margin-left: 0.79998rem;
+  margin-top: 0.239994rem;
+  color: #9e9d9e;
+  font-size: 0.319992rem;
+}
+.productList .listwrap li:last-child {
+  border-bottom: none;
+}
+.list {
+  width: 100%;
+}
+.list .listbody .box {
+  padding: 0.186662rem 0.106664rem;
+  width: 100%;
+  border-bottom: 0.026666rem solid #5a5a5a;
+}
+.list .listbody .box .left {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.list .listbody .box .left a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.list .listbody .box .left a img {
+  width: 100%;
+  height: 100%;
+}
+.list .listbody .box .right {
+  margin-left: 30%;
+}
+.list .listbody .box .right .info {
+  font-size: 0.39999rem;
+  font-weight: bold;
+  margin-bottom: 0.333325rem;
+}
+.list .listbody .box .right .price {
+  font-size: 0.39999rem;
+  font-weight: bold;
+  color: #ff6c00;
+  margin-bottom: 0.319992rem;
+}
+.commentbox .commentswrap {
+  width: 100%;
+  background-color: #ffffff;
+}
+.commentbox .commentswrap li {
+  padding: 0.26666rem;
+  border-bottom: 0.026666rem solid #cdcdcd;
+}
+.commentbox .commentswrap li .brandinfo img {
+  width: 2.93326rem;
+  height: 2.93326rem;
+}
+.commentbox .commentswrap li .brandinfo .brandname {
+  margin-left: 2.93326rem;
+  padding-left: 0.626651rem;
+  font-size: 0.319992rem;
+  color: #a4a7a6;
+}
+.commentbox .commentswrap li .fromanddate {
+  padding: 0.39999rem 0.26666rem;
+  background-color: #f8f8f8;
+  border: 0.026666rem solid #cdcdcd;
+  position: relative;
+}
+.commentbox .commentswrap li .fromanddate .arrow {
+  position: absolute;
+  left: 1.19997rem;
+  top: -0.333325rem;
+  width: 0;
+  height: 0;
+  border: 0.173329rem solid #f8f8f8;
+  border-top: 0.173329rem solid transparent;
+  border-left: 0.173329rem solid transparent;
+  border-right: 0.173329rem solid transparent;
+}
+.commentbox .commentswrap li .fromanddate .shadow {
+  position: absolute;
+  left: 1.186637rem;
+  top: -0.413323rem;
+  width: 0;
+  height: 0;
+  border: 0.199995rem solid #cdcdcd;
+  border-top: 0.199995rem solid transparent;
+  border-left: 0.199995rem solid transparent;
+  border-right: 0.199995rem solid transparent;
+}
+.commentbox .commentswrap li .fromanddate .banda {
+  margin-bottom: 0.426656rem;
+}
+.commentbox .commentswrap li .fromanddate .banda .buyer {
+  float: left;
+  color: #1e4e0c;
+}
+.commentbox .commentswrap li .fromanddate .banda .data {
+  float: right;
+  color: #5a5a5a;
+}
+.commentbox .commentswrap li .fromanddate > .comment {
+  color: #070001;
+  font-size: 0.346658rem;
+}
+.commentbox .commentswrap li:last-child {
+  border-bottom: none;
+}
+.bgcgr {
+  background-color: #c9c9c9;
+}
+span.bgcr {
+  background-color: #f10e0e;
+}
+.bgcy {
+  background-color: #ff9314;
+}
+.bgcg {
+  background-color: #8adf5c;
+}

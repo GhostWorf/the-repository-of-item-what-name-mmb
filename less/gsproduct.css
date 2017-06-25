@@ -1,0 +1,143 @@
+header {
+  background-color: #ff841d;
+}
+header .back {
+  width: 0.426656rem;
+  height: 0.586652rem;
+  margin-top: 0.359991rem;
+  margin-left: 0.26666rem;
+}
+header .back a {
+  width: 100%;
+  height: 100%;
+}
+header .back > a::before {
+  content: "";
+  display: block;
+  width: 0.426656rem;
+  height: 0.586652rem;
+  background-image: url(../images/icon_bar.png);
+  background-position: -2.773264rem -0.293326rem;
+  background-size: 5.86652rem 3.519912rem;
+}
+header .title {
+  margin-left: 0.693316rem;
+  margin-right: 1.306634rem;
+  height: 1.306634rem;
+  line-height: 1.306634rem;
+  text-align: center;
+  font-size: 0.79998rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.nav {
+  width: 100%;
+  height: 0.986642rem;
+}
+.nav .navwrap {
+  height: 0.986642rem;
+  background-color: #ffffff;
+  border-bottom: 0.026666rem solid #e6e6e6;
+  position: relative;
+}
+.nav .navwrap > li {
+  float: left;
+  padding: 0 0.719982rem;
+  line-height: 0.986642rem;
+}
+.nav .navwrap > li i {
+  font-size: 0.39999rem;
+}
+.nav .navwrap .storewrap {
+  position: absolute;
+  top: 0.986642rem;
+  left: 0;
+  width: 100%;
+  display: none;
+  text-align: center;
+  background-color: #ffffff;
+}
+.nav .navwrap .storewrap > li {
+  height: 0.986642rem;
+  text-align: left;
+}
+.nav .navwrap .storewrap > li a {
+  font-size: 0.39999rem;
+  font-weight: bold;
+}
+.nav .navwrap .areawrap {
+  position: absolute;
+  top: 0.986642rem;
+  left: 0;
+  width: 100%;
+  display: none;
+  text-align: center;
+  background-color: #ffffff;
+}
+.nav .navwrap .areawrap > li {
+  height: 0.986642rem;
+  text-align: left;
+}
+.nav .navwrap .areawrap > li a {
+  font-size: 0.39999rem;
+  font-weight: bold;
+}
+.nav .find {
+  border-left: 0.026666rem solid #e6e6e6;
+  float: right;
+  width: 0.986642rem;
+  height: 0.986642rem;
+  background: url("../images/search.svg") no-repeat;
+  background-size: 0.986642rem, 0.986642rem;
+}
+.getgsmain {
+  margin-top: 0.26666rem;
+}
+.getgsmain .getgswrap > li {
+  float: left;
+  margin-left: 0.213328rem;
+  margin-bottom: 0.213328rem;
+  width: 4.693216rem;
+  height: 6.079848rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.getgsmain .getgswrap > li .productImg {
+  width: 4.693216rem;
+  height: 4.639884rem;
+}
+.getgsmain .getgswrap > li .productImg img {
+  width: 4.693216rem;
+  height: 4.639884rem;
+}
+.getgsmain .getgswrap > li .productName {
+  font-size: 0.319992rem;
+  line-height: 0.346658rem;
+  line-height: 0.319992rem;
+  color: #070001;
+}
+.getgsmain .getgswrap > li .priceandgo {
+  height: 0.746648rem;
+  margin-top: 0.213328rem;
+  font-size: 0.346658rem;
+}
+.getgsmain .getgswrap > li .priceandgo .productPrice {
+  float: left;
+  color: #ff6c00;
+}
+.getgsmain .getgswrap > li .priceandgo .go {
+  float: right;
+  display: block;
+  width: 1.653292rem;
+  height: 0.746648rem;
+  background-color: #ff841d;
+}
+.getgsmain .getgswrap > li .priceandgo .go button {
+  width: 1.653292rem;
+  height: 0.746648rem;
+  background-color: #ff841d;
+  border: none;
+  border-radius: 0.13333rem;
+  font-size: 0.319992rem;
+  color: #ffffff;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/flexible/flexible_css.js"></script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/art/template.js"></script>
+    <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+    <script src="js/gsproduct.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="lib/iscroll/iscroll.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+    <title>Document</title>
+</head>
+<body>
+     <header class="clearfix">
+        <!--logo-->
+        <div class="back f-left">
+            <a href='javascript:;'></a>
+        </div>
+        
+        <!--下载app-->
+        <div class="app f-right">
+            <a href='javascript:;'><img src="images/header_app.png" alt=""></a> 
+        </div>
+        <div class="title">
+           凑单品
+        </div>
+    </header> 
+    <section class="nav">
+        <div class="find"></div>
+        <ul class="navwrap">
+            <li class="store">
+                <a href='javascript:;'>
+                     <span>京东</span>
+                    <i class="iconfont icon-arrow-copy"></i>
+                </a>
+            </li>
+            <ul class="storewrap">
+
+            </ul>
+            <li class="area">
+                <a href='javascript:;'>
+                    <span>华北</span>
+                    <i class="iconfont icon-arrow-copy"></i>
+                </a>
+            </li>
+            <ul class="areawrap">
+
+            </ul>
+            <li class="allprice">
+                <a href='javascript:;'>
+                    全部价格
+                    <i class="iconfont icon-arrow-copy"></i>
+                </a>
+            </li>
+            <ul class="allpricewrap">
+
+            </ul>
+        </ul>
+    </section>
+
+    <!--凑单商品主体内容-->
+    <section class="getgsmain">
+        <ul class="getgswrap clearfix">
+
+        </ul>
+    </section>
+
+    <footer class="register">
+        <div class="frame">
+            <a href="javascript:;" class="left">登录</a>
+            <a href="javascript:;" class="center">注册</a>
+            <a href="javascript:;" class="right">
+                <!--<img src="images/top.jpg" alt="">-->
+                返回顶部
+            </a>
+        </div>
+        <div class="contact">
+            <p class="download"><a href="#">手机App下载</a><a href="#">慢慢买手机版</a><a href="#">--掌上比价平台</a></p>
+            <p><a href='#'>m.manmanbuy.com</a></p>
+        </div>
+    </footer> 
+</body>
+<script id="tpl" type="text/html">
+    {{each result as item}}
+        <li sid={{item.shopId}} class="storelist">
+            <a href='javascript:;'>
+                {{item.shopName}}
+            </a>
+        </li>
+    {{/each}}
+</script>
+
+<script id="tpls" type="text/html">
+    {{each result as item}}
+        <li aid={{item.areaId}} class="arealist">
+            <a href='javascript:;'>
+                {{item.areaName}}
+            </a>
+        </li>
+    {{/each}}
+</script>
+
+<script id="tplgs" type="text/html">
+    {{each result as item}}
+        <li class="getgs">
+            <a href="javascript:;">
+                <div class="productImg"><img src="{{item.productImg}}" alt=""></div>
+                <div class="productName txt-cut">{{item.productName}}</div>
+                <div class="priceandgo">
+                    <span class="productPrice">{{item.productPrice}}</span>
+                    <span class="go">
+                        <button>去凑单</button>
+                    </span>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>
+</html>

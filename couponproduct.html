@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/flexible/flexible_css.js"></script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/art/template.js"></script>
+    <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+    <script src="js/couponproduct.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="lib/iscroll/iscroll.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="clearfix">
+        <!--logo-->
+        <div class="back f-left">
+            <a href='javascript:;'></a>
+        </div>
+        
+        <!--下载app-->
+        <div class="app f-right">
+            <a href='javascript:;'><img src="images/header_app.png" alt=""></a> 
+        </div>
+        <div class="title">
+           肯德基优惠券
+        </div>
+    </header>
+    <div class="tips">
+        --点餐前出示手中优惠券,即可享受优惠
+    </div>
+
+
+
+
+
+
+    <!--商品列表-->
+    <section class="content">
+        <ul class="productlist clearfix">
+            
+        </ul>
+    </section>
+
+    
+    <section class="lunbo">
+        <div class="bigwrap">
+            <div class="lunbo-box">
+                <ul class="lunbo-wrap">
+                
+                </ul>
+            </div>
+                <a class="left" href="javascript:;">
+                    
+                </a>
+                <a class="right" href='javascript:;'>
+                     
+                </a>
+        </div>
+    </section>
+
+    <footer class="register">
+        <div class="frame">
+            <a href="javascript:;" class="left">登录</a>
+            <a href="javascript:;" class="center">注册</a>
+            <a href="javascript:;" class="right">
+                <!--<img src="images/top.jpg" alt="">-->
+                返回顶部
+            </a>
+        </div>
+        <div class="contact">
+            <p class="download"><a href="#">手机App下载</a><a href="#">慢慢买手机版</a><a href="#">--掌上比价平台</a></p>
+            <p><a href='#'>m.manmanbuy.com</a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+<script id="list" type="text/html">
+    {{each result as item}}  
+        <li id="w{{item.couponProductId}}" class="box clearfix">
+            <a href='javascript:;'>
+                <div class="arrow">
+                    <i class="iconfont icon-gengduo"></i>
+                </div>
+                <div class="left f-left">{{#item.couponProductImg}}</div>
+                <div class="right">
+                    <div class="wrap">
+                        <div class="productName">{{item.couponProductName}}</div>
+                        <div class="productPrice">{{item.couponProductPrice}}</div>    
+                    </div> 
+                    
+                    <div class="couponProductTime">{{item.couponProductTime}}</div>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>
+
+
+<script id="pic" type="text/html">
+    {{each result as item}}  
+        <li class="lunpic">
+            <a href='#w{{item.couponProductId}}'>
+                {{#item.couponProductImg}}
+            </a>      
+        </li>  
+    {{/each}}
+</script>
+</html>

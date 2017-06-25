@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <script src="lib/flexible/flexible_css.js"></script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/art/template.js"></script>
+    <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+    <script src="js/brand.js"></script>
+    <script src="js/scroll.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <title>brandTitle</title>
+</head>
+<body>
+    <header class="clearfix">
+        <!--logo-->
+        <div class="logo f-left">
+            <a href='javascript:;'><img src="images/header_logo.png" alt=""></a>
+        </div>
+        <!--下载app-->
+        <div class="app f-right">
+            <a href='javascript:;'><img src="images/header_app.png" alt=""></a> 
+        </div>
+    </header>
+    <section class="search clearfix">
+        <div class="right f-right">
+            <input class="btn " type="button" value="搜索">
+        </div>
+        <div class="left">
+            <input class="stext" type="text" placeholder="请输入您想比价的商品">
+        </div>
+    </section>
+
+    <!--面包屑路径-->
+    <section class="title">
+        <a class="select" href="javascript:;">筛选</a>
+        <div class="nav">
+            <a href='index.html'>首页 &nbsp; &gt;</a>
+            <a href='category.html'>全部分类 &nbsp; &gt;</a>
+        </div>
+    </section>
+
+    <!--品牌排行-->
+    <section class="brand-list">
+        
+        <!--提示条-->
+        <div class="txt">
+            平板电视哪个牌子好
+        </div>
+
+
+        <!--产品列表-->
+        <div class="productList">
+            <ul class="listwrap">
+
+            </ul>
+        </div>
+
+        <!--提示条-->
+        <div class="txt">
+            平板电视产品销量排行
+        </div>
+
+        <div class="list">
+            <ul class="listbody">
+                
+            </ul>
+        </div>
+        <!--提示条-->
+        <div class="txt">
+            平板电视最新评论
+        </div>
+
+
+        <!--评论区模块-->
+        <div class="commentbox">
+            <ul class="commentswrap"></ul>
+        </div>
+    </section>
+
+    
+    
+
+
+
+
+    <!--底部-->
+    <footer class="register">
+        <div class="frame">
+            <a href="javascript:;" class="left">登录</a>
+            <a href="javascript:;" class="center">注册</a>
+            <a href="javascript:;" class="right">
+                <!--<img src="images/top.jpg" alt="">-->
+                返回顶部
+            </a>
+        </div>
+        <div class="contact">
+            <p class="download"><a href="#">手机App下载</a><a href="#">慢慢买手机版</a><a href="#">--掌上比价平台</a></p>
+            <p><a href='#'>m.manmanbuy.com</a></p>
+        </div>
+    </footer>
+    </body>
+
+    
+<script id ="tpl" type="text/html">
+    {{each result as v }}
+        <li class="box clearfix">
+            <a href='productlist.html?categoryId={{v.categoryId}}'>
+                <div class="content">
+                    <i class="iconfont icon-gengduo"></i>
+                    <div class="thead">
+                        <span class="level bgcgr"></span>
+                        <span class="brandName">{{v.brandName}}</span>
+                    </div>
+                    <div class="sell">{{v.brandInfo}}</div>
+                </div>   
+            </a>
+        </li>
+
+    {{/each}}
+</script>
+
+<script id="template" type="text/html">
+     {{each result as item  }}
+        <li class="box clearfix">
+            <div class="left f-left"><a href='bijia.html?productid={{item.productId}}'>{{#item.productImg}}</a></div>
+            <div class="right">
+                <div class="info"><a href="bijia.html?productid={{item.productId}}">{{item.productName}}</a></div>
+                <div class="price">{{item.productPrice}}</div>
+                
+                <div class="fromanddate">
+                    <span class="setPrice">{{item.productQuote}}</span>
+                    <span class="comments">{{item.productCom}}</span>
+                </div>
+            </div>
+        </li>
+    {{/each}}
+</script>
+
+<script id="comment" type="text/html">
+     {{each result as item  }}
+        <li class="box clearfix">
+            <div class="brandinfo clearfix">
+                <div class="commentpic f-left"></div>
+                <div class="brandname"></div>
+            </div>
+            <div class="fromanddate">
+                <span class="shadow"></span>
+                <span class="arrow"></span>
+                <div class="banda clearfix">
+                    <span class="buyer">{{item.comName}}</span>
+                    <span class="data">{{item.comTime}}</span>
+                </div>
+                <div class="comment">
+                    {{item.comContent}}
+                    <div class="from">
+                        {{item.comFrom}}
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/each}}
+</script>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+

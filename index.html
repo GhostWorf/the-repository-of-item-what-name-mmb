@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <script src="lib/flexible/flexible_css.js"></script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/art/template.js"></script>
+    <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/scroll.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--头部-->
+    <header class="clearfix">
+        <!--logo-->
+        <div class="logo f-left">
+            <a href='javascript:;'><img src="images/header_logo.png" alt=""></a>
+        </div>
+        <!--下载app-->
+        <div class="app f-right">
+            <a href='javascript:;'><img src="images/header_app.png" alt=""></a>
+        </div>
+    </header>
+
+
+    <!--搜素区域-->
+    <section class="search clearfix">
+        <div class="right f-right">
+            <input class="btn " type="button" value="搜索">
+        </div>
+        <div class="left">
+            <input class="stext" type="text" placeholder="请输入您想比价的商品">
+        </div>
+    </section>
+
+
+    <!--功能导航-->
+    <section class="nav">
+        <ul class="items clearfix">
+
+        </ul>
+    </section>
+
+
+    <!--商品推荐头部-->
+    <section class="product-tj clearfix">
+        <a class="f-right" href='#'>
+            <img src="images/more.png" alt="">
+        </a>
+        <div class="tj">
+            <h3><a href="javascript:;">超值折扣推荐</a></h3>
+        </div>
+    </section>
+
+
+    <!--超市模块-->
+    <section class="market clearfix">
+        <div class="productlist">
+            <ul class="list">
+
+            </ul>
+        </div>
+    </section>
+
+
+    <!--更多优惠信息锚点-->
+    <section class="moreinfo">
+        <a href='moneyctrl.html'>更多优惠信息<i class="iconfont icon-arrow"></i></a>
+    </section>
+
+    <!--品牌排行title-->
+    <section class="brand clearfix">
+        <a class="f-right" href='#'>
+            <img src="images/more.png" alt="">
+        </a>
+        <div class="morebrand">
+            <h3><a href="javascript:;">品牌排行</a></h3>
+        </div>
+    </section>
+
+
+
+
+    <footer class="register">
+        <div class="frame">
+            <a href="javascript:;" class="left">登录</a>
+            <a href="javascript:;" class="center">注册</a>
+            <a href="javascript:;" class="right">
+                <!--<img src="images/top.jpg" alt="">-->
+                返回顶部
+            </a>
+        </div>
+        <div class="contact">
+            <p class="download"><a href="#">手机App下载</a><a href="#">慢慢买手机版</a><a href="#">--掌上比价平台</a></p>
+            <p><a href='#'>m.manmanbuy.com</a></p>
+        </div>
+    </footer>
+</body>
+
+
+<!--功能导航模块模板-->
+<script id="tpl" type="text/html">
+    {{each result as item }}
+    <li>
+        <a href="{{item.titlehref}}">
+                {{#item.img}}
+                <p>{{item.name}}</p>
+            </a>
+    </li>
+    {{/each}}
+</script>
+<!--超市模块模板-->
+<script id="template" type="text/html">
+    {{each result as item }}
+    <a href="getproduct.html?productId={{item.productId}}">
+        <li class="box clearfix">
+            <div class="left f-left">{{#item.productImgSm}}</div>
+            <div class="right">
+                <div class="info">{{item.productName}}
+                    <span class="price">{{item.productPinkage}}</span>
+                </div>
+
+                <div class="fromanddate">
+                    <span class="from">{{item.productFrom}}</span> |
+                    <span class="date">{{item.productTime}}</span>
+                    <span class="comment "><i class="iconfont icon-ui2-icon-comments"></i>{{item.productComCount.replace("有","").replace("人评论","")}}</span>
+                    <span></span>
+                </div>
+
+            </div>
+        </li>
+    </a>
+    {{/each}}
+</script>
+
+</html>

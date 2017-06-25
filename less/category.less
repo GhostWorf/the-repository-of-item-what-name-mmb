@@ -1,0 +1,62 @@
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem";     // 导入换算 less
+@import "@{themes}/variable";   // 导入变量 less
+
+// body {
+//     background-color:@bg-color;
+// }
+
+// 商品种类列表
+.pl {
+    width: 100%;
+    margin-bottom:50*@rem;
+    .productlist{
+        border:2*@rem solid @line-color;
+        border-radius: 8*@rem;
+        width: 100%;
+        >li {
+            width: 100%;
+            // height: 78*@rem;
+            // padding:0 30*@rem;
+            border-bottom:2*@rem solid @line-color;
+            background-color:@font-grew;
+            line-height: 78*@rem;
+            .slid {
+                display: block;
+                width: 100%;
+                height: 100%;
+                float:left;
+            }
+            a {
+                margin-left:30*@rem;
+                font-size: 33*@rem;
+                font-family:"微软雅黑";
+                font-weight: bold;
+                color:#000;
+            }
+            .iconfont {
+                float:right;
+                margin-right:30*@rem;
+                font-size:30*@rem;
+            }
+        }
+
+        // 种类商品导航
+        .productnav {
+                width:100%;
+                overflow: hidden;
+                background-color:@bg-color;
+                li {
+                    border-right:2*@rem solid @line-color;
+                    border-bottom:2*@rem solid @line-color;
+                    text-align: center;
+                    line-height: 78*@rem;
+                    background-color:@bg-color;
+                    width: 33%;
+                    height:78*@rem;
+                    box-sizing: border-box;
+                    float:left;
+                }
+            }
+    }
+}

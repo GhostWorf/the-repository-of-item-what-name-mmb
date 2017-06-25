@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <script src="lib/flexible/flexible_css.js"></script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/art/template.js"></script>
+    <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+    <script src="js/brandTitle.js"></script>
+    <script src="js/scroll.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/brandTitle.css">
+    <title>brandTitle</title>
+</head>
+<body>
+    <header class="clearfix">
+        <!--logo-->
+        <div class="logo f-left">
+            <a href='javascript:;'><img src="images/header_logo.png" alt=""></a>
+        </div>
+        <!--下载app-->
+        <div class="app f-right">
+            <a href='javascript:;'><img src="images/header_app.png" alt=""></a> 
+        </div>
+    </header>
+    <section class="search clearfix">
+        <div class="right f-right">
+            <input class="btn " type="button" value="搜索">
+        </div>
+        <div class="left">
+            <input class="stext" type="text" placeholder="请输入您想比价的商品">
+        </div>
+    </section>
+
+    <!--面包屑路径-->
+    <section class="title">
+        <a class="select" href="javascript:;">筛选</a>
+        <div class="nav">
+            <a href='index.html'>首页 &nbsp; &gt;</a>
+            <a href='category.html'>全部分类 &nbsp; &gt;</a>
+        </div>
+    </section>
+
+    <!--导航模块-->
+    <section class="nav-list">
+        <div class="tip">
+            <div class="txt">
+                热门品牌排行
+            </div>
+        </div>
+    </section>
+
+    <!--品牌列表-->
+    <section class="brandList">
+        <ul class="listwrap">
+
+        </ul>
+    </section>
+
+
+
+
+    <!--底部-->
+    <footer class="register">
+        <div class="frame">
+            <a href="javascript:;" class="left">登录</a>
+            <a href="javascript:;" class="center">注册</a>
+            <a href="javascript:;" class="right">
+                <!--<img src="images/top.jpg" alt="">-->
+                返回顶部
+            </a>
+        </div>
+        <div class="contact">
+            <p class="download"><a href="#">手机App下载</a><a href="#">慢慢买手机版</a><a href="#">--掌上比价平台</a></p>
+            <p><a href='#'>m.manmanbuy.com</a></p>
+        </div>
+    </footer>
+    </body>
+
+    
+<script id = "tpl" type="text/html">
+    {{each result as v }}
+        <li tid = "{{v.brandTitleId}}" class="box clearfix">
+            <a href='brand.html?brandTitleId={{v.brandTitleId}}'>
+                <i class="iconfont icon-arrow-copy1"></i>
+                {{v.brandTitle}} 
+            </a>
+        </li>
+
+    {{/each}}
+</script>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+

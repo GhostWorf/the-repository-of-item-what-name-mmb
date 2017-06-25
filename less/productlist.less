@@ -1,0 +1,116 @@
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem";     // 导入换算 less
+@import "@{themes}/variable";   // 导入变量 less
+
+body {
+    background-color: @bg-color;
+}
+
+// 路径导航模块
+.title {
+    width: 100%;
+    height: 73*@rem;
+    background-image:linear-gradient(to bottom,#fdfdfd,#eeeeee);
+    >.nav {
+        height: 100%;
+        line-height: 73*@rem;
+        font-weight: bold;
+        margin-left:14*@rem;
+        >a {
+            color:@font3-color;
+            margin-left:3*@rem;
+        }
+    }
+    >a {
+        font-weight: bold;
+        color:@font3-color;
+        float:right;
+        height: 58*@rem;
+        line-height: 58*@rem;
+        width: 120*@rem;
+        // line-height: 73*@rem;
+        text-align: center;
+        border:2*@rem solid @line-color;
+        margin-top:9*@rem;
+        border-radius:10*@rem;
+        background-image:linear-gradient(to bottom,#dbdbdb,#f4f4f4);
+        // background-color: #dbdbdb #f4f4f4;
+        margin-right:14*@rem;
+    }
+}
+
+// 商品主体列表
+.list{
+    width: 100%;
+    .listbody{
+        .box {
+        padding:14*@rem 8*@rem;
+        width: 100%;
+        // height:257*@rem;
+        border-bottom:2*@rem solid @font-color;
+           
+                .left {
+                    width: 30%;
+                    height:100%;
+                    box-sizing: border-box;
+                    // padding:1px;
+                     a {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        img {
+                        width: 100%;
+                        height: 100%;
+                        }
+                }
+            }
+        }
+    
+        .right {
+            margin-left:30%;
+            .info {
+                font-size:30*@rem;
+                font-weight: bold;
+                margin-bottom:25*@rem;
+            }
+            .price{
+                font-size:30*@rem;
+                font-weight: bold;
+                color:@price-color;
+                margin-bottom:24*@rem;
+            }
+        }
+    }
+}
+
+// 选择页面版块
+.selectbox {
+    margin-top:20*@rem;
+    height: 72*@rem;
+    margin-bottom:50*@rem;
+    .prev {
+        width:164*@rem ;
+        height: 68*@rem;
+        margin-left:42*@rem;
+    }
+    #sel {
+        width: 116*@rem;
+        height: 68*@rem;
+        border: 2*@rem solid @line-color;
+        margin-left:92*@rem;
+        float:left;
+        // background-color: @bg-color;
+    }
+    .zk {
+        height: 68*@rem;
+        width: 28*@rem;
+        border:2*@rem solid @line-color;
+        border-left:none;
+        float:left;
+    }   
+    .next {
+        width:164*@rem ;
+        height: 68*@rem;
+        margin-left:91*@rem;
+    }
+}

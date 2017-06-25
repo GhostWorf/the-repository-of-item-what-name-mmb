@@ -1,0 +1,75 @@
+
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem";     // 导入换算 less
+@import "@{themes}/variable";   // 导入变量 less
+
+// body {
+//     // max-width: 750*@rem;
+//     background-color: @bg-color;
+// }
+
+// 头部
+header{
+    background-color:@main-color;
+    .back {
+        width: 32*@rem;
+        height: 44*@rem;
+        margin-top:27*@rem;
+        margin-left:20*@rem;
+        // background-color: blue;
+        a {
+            width: 100%;
+            height: 100%;
+        }
+        >a::before {
+            content:"";
+            display: block;
+            width: 32*@rem;
+            height: 44*@rem;
+            background-image: url(../images/icon_bar.png);
+            background-position: -208*@rem -22*@rem;
+            background-size:440*@rem 264*@rem;
+        }
+    
+    }
+    .title {
+        margin-left:52*@rem;
+        margin-right:98*@rem;
+        // width: 100%;
+        height: 98*@rem;
+        line-height: 98*@rem;
+        text-align: center;
+        font-size: 60*@rem;
+        font-weight: bold;
+        color:#ffffff;
+    }
+}
+
+
+// 导航模块
+nav {
+    padding:0 88*@rem 0 86*@rem;
+    .navwrap {
+        margin-top:22*@rem;
+        background-color: @bg-color;
+        li {
+            padding:26*@rem 16*@rem;
+            margin-right:10*@rem;
+            margin-bottom:10*@rem;
+            border:2*@rem solid #b3b3b3;
+            box-sizing: border-box;
+            float:left;
+            background-color:#f4f4f4; 
+            // line-height: 32*@rem;
+            img {
+                width: 32*@rem;
+                height: 32*@rem;
+                
+            }
+            .title {
+                font-size:30*@rem;
+                letter-spacing: 3*@rem;
+            }
+        }
+    }
+}

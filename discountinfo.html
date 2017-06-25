@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/flexible/flexible_css.js"></script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/art/template.js"></script>
+    <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+    <script src="js/discountinfo.js"></script>
+    <script src="js/scroll.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/discountinfo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="clearfix">
+        <!--logo-->
+        <div class="back f-left">
+            <a href='javascript:;'></a>
+        </div>
+        
+        <!--下载app-->
+        <div class="app f-right">
+            <a href='javascript:;'><img src="images/header_app.png" alt=""></a> 
+        </div>
+        <div class="title">
+            国内折扣
+        </div>
+    </header>
+
+    <!--产品信息-->
+    <section class="productinfo">
+        
+
+    </section>
+    <!--底部-->
+    <footer class="register">
+        <div class="frame">
+            <a href="javascript:;" class="left">登录</a>
+            <a href="javascript:;" class="center">注册</a>
+            <a href="javascript:;" class="right">
+                <!--<img src="images/top.jpg" alt="">-->
+                返回顶部
+            </a>
+        </div>
+        <div class="contact">
+            <p class="download"><a href="#">手机App下载</a><a href="#">慢慢买手机版</a><a href="#">--掌上比价平台</a></p>
+            <p><a href='#'>m.manmanbuy.com</a></p>
+        </div>
+    </footer>  
+</body>
+
+<!--产品信息-->
+<script id="tpl" type="text/html">
+    {{each result as v}}
+        <div class="productName">{{v.productName}}</div>
+        <div class="productPrice">{{v.productPrice}}</div>
+        <div class="store">
+            <span class="productFrom">{{v.productFrom}}</span>
+            <span class="productTime">{{v.productTime}}</span>
+            <span class="productTips">{{v.productTips}}</span>
+        </div>
+        <div class="picandinfo">
+            <div class="img"></div>
+            <div class="productInfo">
+                {{v.productInfo}}
+            </div>
+        </div>
+        {{#v.productImg}}
+        <div class="buy">
+            <button>前往购买</button>
+        </div>
+        <div class="weixing">
+            <img src="images/mmbweixin2.png" alt="">
+        </div>
+        <div class="comment">
+            {{#v.productComment}}
+        </div>
+    {{/each}}
+</script>
+
+<!--<script id="tem" type="text/html" >
+    {{each result as c}}
+        <div class="box">
+            
+        </div>
+
+    {{/each}}
+</script>-->
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/flexible/flexible_css.js"></script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/art/template.js"></script>
+    <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+    <script src="js/sitenav.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="lib/iscroll/iscroll.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+    <title>Document</title>
+</head>
+<body>
+     <header class="clearfix">
+        <!--logo-->
+        <div class="back f-left">
+            <a href='javascript:;'></a>
+        </div>
+        
+        <!--下载app-->
+        <div class="app f-right">
+            <a href='javascript:;'><img src="images/header_app.png" alt=""></a> 
+        </div>
+        <div class="title">
+           商场导航
+        </div>
+    </header> 
+
+    <!--导航模块-->
+    <nav class="clearfix">
+        <ul class="navwrap">
+
+        </ul>
+    </nav>
+    <!--底部-->
+    <footer class="register">
+        <div class="frame">
+            <a href="javascript:;" class="left">登录</a>
+            <a href="javascript:;" class="center">注册</a>
+            <a href="javascript:;" class="right">
+                <!--<img src="images/top.jpg" alt="">-->
+                返回顶部
+            </a>
+        </div>
+        <div class="contact">
+            <p class="download"><a href="#">手机App下载</a><a href="#">慢慢买手机版</a><a href="#">--掌上比价平台</a></p>
+            <p><a href='#'>m.manmanbuy.com</a></p>
+        </div>
+    </footer> 
+</body>
+
+<!--导航模板-->
+<script id="tpl" type="text/html">
+    {{each result as item}}
+        <li class="storelist">
+            <a href='{{item.navHref}}'>
+                <img src="{{item.navImg}}" alt="">
+                <span class="title">{{item.navTitle}}</span>
+           </a>
+        </li>
+    {{/each}}
+</script>
+
+
+</html>

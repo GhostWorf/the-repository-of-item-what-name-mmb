@@ -1,0 +1,87 @@
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem";     // 导入换算 less
+@import "@{themes}/variable";   // 导入变量 less
+
+
+body {
+    background-color: @bg-color;
+}
+// 头部
+.back {
+    width: 32*@rem;
+    height: 44*@rem;
+    margin-top:27*@rem;
+    margin-left:20*@rem;
+    // background-color: blue;
+    a {
+        width: 100%;
+        height: 100%;
+    }
+    >a::before {
+        content:"";
+        display: block;
+        width: 32*@rem;
+        height: 44*@rem;
+        background-image: url(../images/icon_bar.png);
+        background-position: -208*@rem -22*@rem;
+        background-size:440*@rem 264*@rem;
+    }
+    
+}
+.title {
+    margin-left:52*@rem;
+    margin-right:98*@rem;
+    // width: 100%;
+    height: 98*@rem;
+    line-height: 98*@rem;
+    text-align: center;
+    font-size: 60*@rem;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.main {
+    .content{
+        margin-bottom:70*@rem;
+        li {
+            float:left;
+            width:372*@rem;
+            height: 528*@rem;
+            padding:40*@rem 20*@rem 26*@rem 36*@rem;
+            border-left:2*@rem solid @line-color;
+            border-bottom:2*@rem solid @line-color;
+            .wrap {
+                height: 376*@rem;
+                img {
+                    height: 280*@rem;
+                    width: 280*@rem;
+                }
+                .productName {
+                    font-size:24*@rem;
+                    font-weight:bold;
+                    color:@font3-color;
+                    line-height: 38*@rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+            }
+            .productPrice {
+                font-size:24*@rem;
+                color:@price-color;
+                line-height: 24*@rem;
+                // margin-top:13*@rem;
+            }
+            .Fromanddata {
+                font-size:24*@rem;
+                margin-top:30*@rem;
+                color:#acaca9;
+            }
+        }
+        li::nth-child(2n){
+            border-right:2*@rem solid @line-color;
+        }
+        
+    }
+}

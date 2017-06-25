@@ -1,0 +1,141 @@
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem";     // 导入换算 less
+@import "@{themes}/variable";   // 导入变量 less
+
+// 头部
+header {
+    width: 100%;
+    height: 98*@rem;
+    background-color: @main-color;
+    >.logo {
+        width: 440*@rem;
+        height: 100%;
+        padding:24*@rem 34*@rem;
+        box-sizing: border-box;
+        // margin:;
+        >a{
+            width: 100%;
+            height: 100%;
+            
+            display: block;
+            >img{
+                width: 100%;
+                height: 100%;
+            } 
+        } 
+        
+        // margin-top:24*@rem;
+        // a{
+        //     width: 100%;
+        //     height: 100%;
+        //     display: block;  
+        // }
+        // line-height:98*@rem;      
+    }
+    .app{
+        width: 98*@rem;
+        height: 98*@rem;
+        // margin-left:643*@rem;
+        padding:14*@rem 11*@rem;
+        box-sizing: border-box;
+        // a{
+        //     width: 100%;
+        //     height: 100%;
+        // } 
+        a {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }    
+        } 
+    } 
+}
+
+.search {
+    width: 100%;
+    height: 100*@rem;
+    background-color: @bg-color;
+    line-height: 100*@rem; 
+    .right{
+        width: 160*@rem;
+        height: 100%;
+        .btn {
+            width: 126*@rem;
+            height: 60*@rem;
+            border-radius: 60*@rem;
+            margin-left:14*@rem;
+            background-color:@main-color;
+            margin-top:20*@rem;
+            font-size:26*@rem;
+            color:@bg-color; 
+        }
+    }
+    .left {
+        margin-left:20*@rem;
+        margin-right:160*@rem;
+        .stext{
+            border-radius: 60*@rem;
+            width: 100%;   
+            height: 60*@rem;
+            background-color: @font-grew;
+            font-size:24*@rem;
+            text-indent: 20px;
+        }
+    } 
+}
+// 底部
+footer {
+    margin-top:60*@rem;
+    background-color: #efefef;
+    .frame {
+        width: 100%;
+        height:64*@rem;
+        border:0 2*@rem;
+        border:2*@rem solid @font-color;
+        background-color: @font-grew ;
+        a{
+            display: block;
+            float:left;
+            line-height: 100%;
+            text-align: center;
+            padding-top:22*@rem;
+        }
+        .left,.center {
+            display: block;
+            width:25%;
+            height: 100%;
+            border-right:2*@rem solid @font-color;
+            box-sizing: border-box;
+        }
+        .right {
+            display: block;
+            height:42*@rem;
+            width: 50%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .right::before{
+                content:"";
+                position: absolute;
+                left:110*@rem;
+                top:17*@rem;
+                display: block;
+                width: 28*@rem;
+                height: 28*@rem;
+                background-image: url('../images/top.jpg');
+                background-size: 100%,100%;
+            }
+
+    }
+    .contact {
+        margin-top:34*@rem;
+        text-align: center;
+        .download {
+            a:nth-child(1){
+                color:@font2-color;
+            }
+        }
+    }
+}

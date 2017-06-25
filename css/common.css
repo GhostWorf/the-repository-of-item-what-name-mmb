@@ -1,0 +1,117 @@
+header {
+  width: 100%;
+  height: 1.306634rem;
+  background-color: #ff841d;
+}
+header > .logo {
+  width: 5.86652rem;
+  height: 100%;
+  padding: 0.319992rem 0.453322rem;
+  box-sizing: border-box;
+}
+header > .logo > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header > .logo > a > img {
+  width: 100%;
+  height: 100%;
+}
+header .app {
+  width: 1.306634rem;
+  height: 1.306634rem;
+  padding: 0.186662rem 0.146663rem;
+  box-sizing: border-box;
+}
+header .app a {
+  width: 100%;
+  height: 100%;
+}
+header .app a img {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  width: 100%;
+  height: 1.3333rem;
+  background-color: #ffffff;
+  line-height: 1.3333rem;
+}
+.search .right {
+  width: 2.13328rem;
+  height: 100%;
+}
+.search .right .btn {
+  width: 1.679958rem;
+  height: 0.79998rem;
+  border-radius: 0.79998rem;
+  margin-left: 0.186662rem;
+  background-color: #ff841d;
+  margin-top: 0.26666rem;
+  font-size: 0.346658rem;
+  color: #ffffff;
+}
+.search .left {
+  margin-left: 0.26666rem;
+  margin-right: 2.13328rem;
+}
+.search .left .stext {
+  border-radius: 0.79998rem;
+  width: 100%;
+  height: 0.79998rem;
+  background-color: #f1f1f1;
+  font-size: 0.319992rem;
+  text-indent: 20px;
+}
+footer {
+  margin-top: 0.79998rem;
+  background-color: #efefef;
+}
+footer .frame {
+  width: 100%;
+  height: 0.853312rem;
+  border: 0 0.026666rem;
+  border: 0.026666rem solid #5a5a5a;
+  background-color: #f1f1f1;
+}
+footer .frame a {
+  display: block;
+  float: left;
+  line-height: 100%;
+  text-align: center;
+  padding-top: 0.293326rem;
+}
+footer .frame .left,
+footer .frame .center {
+  display: block;
+  width: 25%;
+  height: 100%;
+  border-right: 0.026666rem solid #5a5a5a;
+  box-sizing: border-box;
+}
+footer .frame .right {
+  display: block;
+  height: 0.559986rem;
+  width: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+footer .frame .right::before {
+  content: "";
+  position: absolute;
+  left: 1.46663rem;
+  top: 0.226661rem;
+  display: block;
+  width: 0.373324rem;
+  height: 0.373324rem;
+  background-image: url('../images/top.jpg');
+  background-size: 100%,100%;
+}
+footer .contact {
+  margin-top: 0.453322rem;
+  text-align: center;
+}
+footer .contact .download a:nth-child(1) {
+  color: #ff0c36;
+}

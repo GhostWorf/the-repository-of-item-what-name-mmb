@@ -1,0 +1,87 @@
+.back {
+  width: 0.426656rem;
+  height: 0.586652rem;
+  margin-top: 0.359991rem;
+  margin-left: 0.26666rem;
+}
+.back > a::before {
+  content: "";
+  display: block;
+  width: 0.426656rem;
+  height: 0.586652rem;
+  background-image: url(../images/icon_bar.png);
+  background-position: -2.786597rem -0.293326rem;
+}
+.title {
+  margin-left: 0.693316rem;
+  margin-right: 1.306634rem;
+  width: 100%;
+  height: 1.306634rem;
+  line-height: 1.306634rem;
+  text-align: center;
+  font-size: 0.79998rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.market {
+  width: 100%;
+}
+.market .box {
+  padding: 0.186662rem 0.106664rem;
+  width: 100%;
+  height: 3.426581rem;
+  border-bottom: 0.026666rem solid #5a5a5a;
+}
+.market .box .left {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.market .box .left img {
+  width: 100%;
+  height: 100%;
+}
+.market .box .right {
+  margin-left: 30%;
+}
+.market .box .right .info {
+  height: 1.839954rem;
+  font-size: 0.39999rem;
+  font-weight: bold;
+}
+.market .box .right .info .price {
+  color: #ff6c00;
+}
+.market .box .right .fromanddate .comment {
+  float: right;
+  margin-right: 0.319992rem;
+}
+.selectbox {
+  margin-top: 0.26666rem;
+  height: 0.959976rem;
+  margin-bottom: 0.66665rem;
+}
+.selectbox .prev {
+  width: 2.186612rem;
+  height: 0.906644rem;
+  margin-left: 0.559986rem;
+}
+.selectbox #sel {
+  width: 1.546628rem;
+  height: 0.906644rem;
+  border: 0.026666rem solid #e6e6e6;
+  margin-left: 1.226636rem;
+  float: left;
+}
+.selectbox .zk {
+  height: 0.906644rem;
+  width: 0.373324rem;
+  border: 0.026666rem solid #e6e6e6;
+  border-left: none;
+  float: left;
+}
+.selectbox .next {
+  width: 2.186612rem;
+  height: 0.906644rem;
+  margin-left: 1.213303rem;
+}

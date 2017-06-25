@@ -1,0 +1,160 @@
+header {
+  background-color: #f4483e;
+}
+header .back {
+  width: 0.426656rem;
+  height: 0.586652rem;
+  margin-top: 0.359991rem;
+  margin-left: 0.26666rem;
+}
+header .back a {
+  width: 100%;
+  height: 100%;
+}
+header .back > a::before {
+  content: "";
+  display: block;
+  width: 0.426656rem;
+  height: 0.586652rem;
+  background-image: url(../images/icon_bar.png);
+  background-position: -2.773264rem -0.293326rem;
+  background-size: 5.86652rem 3.519912rem;
+}
+header .title {
+  margin-left: 0.693316rem;
+  margin-right: 1.306634rem;
+  height: 1.306634rem;
+  line-height: 1.306634rem;
+  text-align: center;
+  font-size: 0.79998rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.tips {
+  width: 100%;
+  height: 0.879978rem;
+  line-height: 0.879978rem;
+  text-align: center;
+}
+.content {
+  width: 100%;
+  margin-top: 0.159996rem;
+}
+.content .box {
+  padding: 0.26666rem 0.26666rem 0.453322rem;
+  background-color: #ffffff;
+  border-bottom: 0.026666rem solid #5a5a5a;
+}
+.content .box .left {
+  width: 2.6666rem;
+  height: 2.13328rem;
+}
+.content .box .left img {
+  width: 100%;
+  height: 100%;
+}
+.content .box .right {
+  margin-left: 2.6666rem;
+  padding-left: 0.26666rem;
+}
+.content .box .right .wrap {
+  height: 3.19992rem;
+}
+.content .box .right .wrap .productName {
+  font-size: 0.39999rem;
+  line-height: 0.53332rem;
+  color: #070001;
+}
+.content .box .right .wrap .productPrice {
+  margin-top: 0.159996rem;
+  color: #000000;
+  font-size: 0.39999rem;
+  font-weight: bold;
+}
+.content .box .right .couponProductTime {
+  color: #ed6300;
+  font-size: 0.293326rem;
+}
+.content .box .arrow {
+  float: right;
+  width: 0.53332rem;
+  height: 0.66665rem;
+  margin-right: -0.13333rem;
+  margin-top: 1.626626rem;
+}
+.content .box .arrow i {
+  font-size: 0.613318rem;
+}
+.lunbo {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  padding: 0 0.66665rem;
+}
+.lunbo .bigwrap {
+  height: 100%;
+  position: relative;
+}
+.lunbo .bigwrap .lunbo-box {
+  width: 5.3332rem;
+  height: 5.3332rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: red;
+  transform: translate(-50%, -50%);
+}
+.lunbo .bigwrap .lunbo-box .lunbo-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.lunbo .bigwrap .lunbo-box .lunbo-wrap .lunpic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.lunbo .bigwrap .lunbo-box .lunbo-wrap .lunpic a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.lunbo .bigwrap .lunbo-box .lunbo-wrap .lunpic a img {
+  width: 5.3332rem;
+  height: 5.3332rem;
+}
+.lunbo .bigwrap .lunbo-box .lunbo-wrap li:first-child {
+  display: block;
+}
+.lunbo .bigwrap a {
+  width: 1.06664rem;
+  height: 1.3333rem;
+  position: absolute;
+  text-align: center;
+  line-height: 1.3333rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.lunbo .bigwrap a i {
+  font-size: 0.93331rem;
+}
+.lunbo .bigwrap a.left {
+  background: url("../images/arrow-left.svg") no-repeat;
+  background-size: 1.06664rem, 1.3333rem;
+  left: 0;
+}
+.lunbo .bigwrap a.right {
+  right: 0;
+  background: url("../images/arrow-right.svg") no-repeat;
+  background-size: 1.06664rem, 1.3333rem;
+}

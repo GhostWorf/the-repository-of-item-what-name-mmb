@@ -1,0 +1,199 @@
+header {
+  background-color: #f4483e;
+}
+.back {
+  width: 0.426656rem;
+  height: 0.586652rem;
+  margin-top: 0.359991rem;
+  margin-left: 0.26666rem;
+}
+.back a {
+  width: 100%;
+  height: 100%;
+}
+.back > a::before {
+  content: "";
+  display: block;
+  width: 0.426656rem;
+  height: 0.586652rem;
+  background-image: url(../images/icon_bar.png);
+  background-position: -2.773264rem -0.293326rem;
+  background-size: 5.86652rem 3.519912rem;
+}
+.title {
+  margin-left: 0.693316rem;
+  margin-right: 1.306634rem;
+  height: 1.306634rem;
+  line-height: 1.306634rem;
+  text-align: center;
+  font-size: 0.79998rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.nav {
+  position: relative;
+  background-color: #ffffff;
+}
+.nav #wrapper {
+  height: 1.06664rem;
+  overflow: hidden;
+}
+.nav #wrapper > a {
+  background-color: #fbfbfb;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav #wrapper .find {
+  float: right;
+  width: 0.959976rem;
+  height: 0.959976rem;
+  position: relative;
+}
+.nav #wrapper .find::before {
+  content: "";
+  width: 0.959976rem;
+  height: 0.959976rem;
+  border-left: 0.026666rem solid #e6e6e6;
+  background: url("../images/search.svg") no-repeat;
+  background-size: 0.959976rem 0.959976rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.nav #wrapper .box {
+  height: 100%;
+}
+.nav #wrapper .box .ti {
+  text-align: center;
+  line-height: 0.959976rem;
+  float: left;
+  height: 0.959976rem;
+  padding: 0 0.333325rem;
+  box-sizing: border-box;
+}
+.nav #wrapper .box .ti .navtitle {
+  font-size: 0.319992rem;
+  font-weight: bold;
+  display: block;
+  height: 100%;
+}
+.product {
+  width: 100%;
+  margin-top: 0.159996rem;
+}
+.product .box {
+  padding: 0.26666rem 0.13333rem;
+  width: 100%;
+  background-color: #ffffff;
+  border-right: 0.026666rem solid #5a5a5a;
+}
+.product .box .left {
+  width: 3.453247rem;
+  height: 3.453247rem;
+  box-sizing: border-box;
+}
+.product .box .left img {
+  width: 100%;
+  height: 100%;
+}
+.product .box .right {
+  margin-left: 3.453247rem;
+  padding-left: 0.13333rem;
+}
+.product .box .right .wrap {
+  height: 2.106614rem;
+}
+.product .box .right .wrap .productName {
+  font-size: 0.39999rem;
+  line-height: 0.559986rem;
+  font-weight: bold;
+  color: #070001;
+}
+.product .box .right .wrap .productPrice {
+  margin-top: 0.293326rem;
+  color: #fb0101;
+  font-size: 0.53332rem;
+  font-weight: bold;
+}
+.product .box .right .wrap .productPrice i {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.426656rem;
+}
+.product .box .right .wrap .productPrice em {
+  margin-left: 0.066665rem;
+  font-size: 0.319992rem;
+}
+.product .box .right .wrap .productPrice del {
+  margin-left: 0.346658rem;
+  color: #5a5a5a;
+  font-size: 0.319992rem;
+}
+.product .box .right .bar {
+  display: inline-block;
+}
+.product .box .right .bar i {
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  width: 2.186612rem;
+  height: 0.346658rem;
+  border: 0.026666rem solid #ff0c36;
+  margin-right: 0.319992rem;
+  border-radius: 0.173329rem;
+  background-color: #ffb7b7;
+  position: relative;
+}
+.product .box .right .bar i em {
+  height: 0.319992rem;
+  float: left;
+  border-radius: 0.159996rem;
+  display: block;
+  background-color: #fc3439;
+}
+.product .box .right .bar i span {
+  float: left;
+  font-size: 0.319992rem;
+}
+.product .box .right .bar b {
+  float: left;
+  font-size: 0.346658rem;
+  line-height: 0.346658rem;
+  color: #ff0c36;
+}
+.product .box .right .yhq {
+  display: inline-block;
+  margin-top: 0.226661rem;
+}
+.product .box .right .yhq span:nth-child(1) {
+  float: left;
+  display: block;
+  width: 2.826596rem;
+  height: 0.639984rem;
+  border: 0.026666rem dashed #ff0c36;
+  line-height: 0.639984rem;
+  text-align: center;
+}
+.product .box .right .yhq span:nth-child(1) a {
+  color: #e2242a;
+}
+.product .box .right .yhq span:nth-child(2) {
+  float: right;
+  width: 1.533295rem;
+  height: 0.733315rem;
+  margin-left: 1.706624rem;
+  display: block;
+  background-color: #ff5e5d;
+  line-height: 0.733315rem;
+  text-align: center;
+  border-radius: 0.13333rem;
+  border: 0.026666rem solid #ff4645;
+}
+.product .box .right .yhq span:nth-child(2) > a {
+  color: #ffffff;
+}
+a.color {
+  border-bottom: 0.039999rem solid #ff0c36;
+  color: #ff0c36;
+}

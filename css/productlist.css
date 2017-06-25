@@ -1,0 +1,101 @@
+body {
+  background-color: #ffffff;
+}
+.title {
+  width: 100%;
+  height: 0.973309rem;
+  background-image: linear-gradient(to bottom, #fdfdfd, #eeeeee);
+}
+.title > .nav {
+  height: 100%;
+  line-height: 0.973309rem;
+  font-weight: bold;
+  margin-left: 0.186662rem;
+}
+.title > .nav > a {
+  color: #070001;
+  margin-left: 0.039999rem;
+}
+.title > a {
+  font-weight: bold;
+  color: #070001;
+  float: right;
+  height: 0.773314rem;
+  line-height: 0.773314rem;
+  width: 1.59996rem;
+  text-align: center;
+  border: 0.026666rem solid #e6e6e6;
+  margin-top: 0.119997rem;
+  border-radius: 0.13333rem;
+  background-image: linear-gradient(to bottom, #dbdbdb, #f4f4f4);
+  margin-right: 0.186662rem;
+}
+.list {
+  width: 100%;
+}
+.list .listbody .box {
+  padding: 0.186662rem 0.106664rem;
+  width: 100%;
+  border-bottom: 0.026666rem solid #5a5a5a;
+}
+.list .listbody .box .left {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.list .listbody .box .left a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.list .listbody .box .left a img {
+  width: 100%;
+  height: 100%;
+}
+.list .listbody .right {
+  margin-left: 30%;
+}
+.list .listbody .right .info {
+  font-size: 0.39999rem;
+  font-weight: bold;
+  margin-bottom: 0.333325rem;
+}
+.list .listbody .right .price {
+  font-size: 0.39999rem;
+  font-weight: bold;
+  color: #ff6c00;
+  margin-bottom: 0.319992rem;
+}
+.selectbox {
+  margin-top: 0.26666rem;
+  height: 0.959976rem;
+  margin-bottom: 0.66665rem;
+}
+.selectbox .prev {
+  width: 2.186612rem;
+  height: 0.906644rem;
+  margin-left: 0.559986rem;
+}
+.selectbox #sel {
+  width: 1.546628rem;
+  height: 0.906644rem;
+  border: 0.026666rem solid #e6e6e6;
+  margin-left: 1.226636rem;
+  float: left;
+}
+.selectbox .zk {
+  height: 0.906644rem;
+  width: 0.373324rem;
+  border: 0.026666rem solid #e6e6e6;
+  border-left: none;
+  float: left;
+}
+.selectbox .next {
+  width: 2.186612rem;
+  height: 0.906644rem;
+  margin-left: 1.213303rem;
+}
+footer {
+  background-color: #f1f1f1;
+  margin-bottom: 6.6665rem;
+}
